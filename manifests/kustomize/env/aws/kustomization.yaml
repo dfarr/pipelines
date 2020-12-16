@@ -10,11 +10,11 @@ configMapGenerator:
   behavior: merge
 - name: workflow-controller-configmap
   behavior: replace
-  envs:
+  files:
   - config
 - name: ml-pipeline-ui-configmap
   behavior: replace
-  envs:
+  files:
   - viewer-pod-template.json
 secretGenerator:
 - name: mysql-secret
