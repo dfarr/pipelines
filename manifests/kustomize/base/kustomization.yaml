@@ -3,7 +3,7 @@ kind: Kustomization
 namespace: kubeflow
 resources:
 - application
-- argo
+# - argo
 - pipeline
 - metadata
 - cache

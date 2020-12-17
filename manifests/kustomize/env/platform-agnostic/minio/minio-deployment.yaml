@@ -34,11 +34,11 @@ spec:
         name: minio
         ports:
         - containerPort: 9000
-        volumeMounts:
-        - mountPath: /data
-          name: data
-          subPath: minio
-      volumes:
-      - name: data
-        persistentVolumeClaim:
-          claimName: minio-pvc
+        # volumeMounts:
+        # - mountPath: /data
+        #   name: data
+        #   subPath: minio
+      # volumes:
+      # - name: data
+      #   persistentVolumeClaim:
+      #     claimName: minio-pvc
